@@ -57,3 +57,20 @@ a:hover {
     color: lighten($color,40%);
     transition: color 350ms linear;
 }
+
+h1 {
+    @include fontSize(200px);
+    margin: -30px 0 0 0;
+}
+
+h1, h2, h3 {
+    @include headline-font;
+    line-height: 1;
+}
+
+article h1 {
+    color: $color-title;
+    @include fontSize(66px);
+    margin: 48px 0 48px 0;
+    text-transform: capitalize;
+}
